@@ -58,36 +58,6 @@
     }
 }
 
-
-/* Sections */
-
-section {
-    margin-bottom: $spacer*2;
-    @include media-breakpoint-up(md) {
-        margin-bottom: $spacer*4;
-    }
-}
-
-.home {
-    section.hero {
-        display: flex;
-        align-items: center;
-        background: #e2e8ef;
-        height: 60vh;
-        padding-top: 0;
-        @include media-breakpoint-up(md) {
-            height: 100vh;
-            padding-top: $spacer*6;
-        }
-    }
-}
-
-section.hero {
-    background: #e2e8ef;
-    min-height: $spacer*12;
-    padding-top: $spacer*6;
-}
-
 .green-tint {
     background-color: #f4f8f1;
 }
@@ -150,73 +120,24 @@ section.hero {
     object-fit: cover;
 }
 
-.card-section__background {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.card-section__background-color {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .9;
-}
-
-.card {
-    border: none;
-    padding-top: $spacer*1.5;
-    border-radius: 0;
-    box-shadow: rgba(0, 0, 0, 0.14) 0px 0px 19px;
-
-    .card-body {
-        padding-bottom: $spacer;
+.cards-with-icons {
+    .card-img-top {
+        margin: auto;
+        width: 174px;
+        height: 174px;
     }
 }
-
-.card-img-top {
-    border-radius: 0;
-    width: 200px;
-    height: 116px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card-title {
-    font-size: 1.6rem;
-    color: #424C6A;
-}
-
-.card-footer {
-    border-top: none;
-    background-color: #fff;
-}
-
-.cards-clean {
-    .card {
-        box-shadow: none;
+.columned-media-and-text, .columned-white-media-and-text {
+    .card-img-top {
+        height: 332px;
     }
-
-    @include media-breakpoint-up(md) {
-        .card-line {
-            border-right: 1px solid #ebebeb;
-        }
-        .col:nth-child(3n) {
-            .card-line {
-                border-color: white;
-            }
-        }
-        .col:last-of-type {
-            .card-line {
-                border-color: white;
-            }
+}
+.custom-post-blocks {
+    img {
+        height: auto;
+        width: 100%;
+        @include media-breakpoint-up(xxl) {
+            max-height: 250px;
         }
     }
-
 }
-.section--column {
-    overflow-x: hidden;
-}
-

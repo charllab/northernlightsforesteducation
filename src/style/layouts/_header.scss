@@ -12,10 +12,9 @@
 
     .nav-link {
         font-weight: 600;
-        color: $seconder;
+        color: lighten($dark,40%);
         &.active {
-            font-weight: 900;
-            color: $primer;
+            color: darken($dark,5%);
         }
     }
 

@@ -17,7 +17,7 @@ body .gform_wrapper {
 }
 
 body .gform_wrapper .gform_body .gform_fields .gfield .gfield_label {
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     color: $dark;
 }
 body .gform_wrapper .gform_body .gform_fields .gfield .gfield_label .gfield_required {color: red}
@@ -31,7 +31,7 @@ body .gform_wrapper .gform_body .gform_fields .gfield .ginput_complex .ginput_le
 body .gform_wrapper .gform_body .gform_fields .gfield .ginput_complex .ginput_right label {color: $dark}
 
 body .gform_wrapper .gform_required_legend {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 90%;
 }
 body .gform_wrapper .gfield_description.validation_message.gfield_validation_message {
@@ -86,7 +86,7 @@ body .gform_wrapper select {
 .gform_wrapper.gravity-theme .gfield-choice-input+label {
     margin-bottom: 2px !important;
     padding-right: 2px;
-    font-weight: 700;
+    font-weight: 600;
     color: $dark;
 }
 

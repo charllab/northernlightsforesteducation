@@ -6,8 +6,7 @@ $enable-print-styles: false;
 
 // Colors
 $primary: #040F2B; //dark blue
-$primer: #118C3C; //grass green
-$secondary: #366141; //dark green
+$secondary: #118C3C; //grass green
 $seconder: #7BB149; //lime green
 
 $body-color: #606060;
@@ -34,15 +33,15 @@ $grid-breakpoints: (
 );
 
 $container-max-widths: (
-    xxs: 567px,
-    xs: 568px,
-    sm: 667.5px,
-    md: 767.5px,
-    lg: 991.5px,
-    xl: 1139.5px,
-    xxl: 1404px,
-    xxxl: 1570px,
-    xwide: 1840px
+    xxs: 500px,
+    xs: 500px,
+    sm: 588px,
+    md: 676px,
+    lg: 872px,
+    xl: 1104px,
+    xxl: 1324px,
+    xxxl: 1582px,
+    xwide: 1766px
 );
 
 $spacer: 1.5rem;

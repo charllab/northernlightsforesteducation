@@ -19,7 +19,7 @@ button, .btn {
     font-size: 1.35rem;
     text-transform: none;
     line-height: 1.22;
-    font-weight: 500;
+    font-weight: 400;
     background-color: #fff !important;
     color: $headings-color;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 12px;
@@ -38,6 +38,10 @@ button, .btn {
     &:active {
         border-color: #ebebeb;
     }
+}
+
+.btn-secondary {
+    color: white !important;
 }
 
 body .gform_wrapper .gform_footer input[type=submit] {
