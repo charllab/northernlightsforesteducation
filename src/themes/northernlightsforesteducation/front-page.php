@@ -1,6 +1,7 @@
 <?php get_header(); ?>
-    <section class="content-hero bg-dark vh-100 pb-2">
-        <div class="container h-100 d-flex align-items-center position-relative bg-info">
+    <section class="content-hero bg-dark vh-100 pb-2 position-relative">
+        <div class="snowy-hills"></div><!-- snowy-hills -->
+        <div class="container h-100 d-flex align-items-center position-relative">
             <div class="row">
                 <div class="col-xl-7">
                     <h1 class="text-white">H1 Lorem ipsum dolor. consetetur sadipscing elitr.</h1>
@@ -8,13 +9,22 @@
                     <a href="#" class="btn btn-outline-light">Learn More</a>
                 </div><!-- col -->
             </div><!-- row -->
-            <div class="position-absolute bottom-0 start-50 translate-middle-x bg-danger">
-                <a href="#down" class="d-block text-white pb-8">scroll-down-icon</a>
+
+            <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                <a href="#start" class="text-decoration-none d-flex flex-column align-items-center text-white pb-25 pb-xs-5">
+                    <span>Scroll</span>
+                    <img src="<?php bloginfo('template_url'); ?>/images/scroll-bottom-icon.svg"
+                         alt="<?php bloginfo('name'); ?> - Logo"
+                         class="img-fluid scroll-icon">
+                    <span class="sr-only"><?php bloginfo('name'); ?></span>
+                </a>
             </div><!-- position-absolute -->
         </div><!-- container -->
     </section><!-- content-hero -->
 
-    <section class="content-wide pb-2 pb-xl-4 bg-info">
+    <div id="start"></div>
+
+    <section class="content-wide pb-2 pb-xl-4">
         <div class="container">
             <div class="row">
                 <div class="col-12"><p>content-wide</p></div>
@@ -36,7 +46,13 @@
         </div><!-- container -->
     </section><!-- content-wide -->
 
-    <section class="content-two-thirds pb-2 pb-xl-4 bg-dark">
+    <section class="green-hills-with-sky bg-dark position-relative">
+        <div class="green-hills"></div><!-- green-hills -->
+    </section>
+
+
+
+    <section class="content-two-thirds bg-green">
         <div class="container">
             <div class="row">
                 <div class="col-12"><p class="text-white">content-two-thirds</p></div>
@@ -57,6 +73,10 @@
             </div><!-- row -->
         </div><!-- container -->
     </section><!-- content-two-thirds -->
+
+    <section class="snowy-hills-on-green bg-green position-relative">
+        <div class="snowy-hills"></div><!-- green-hills -->
+    </section>
 
     <section class="text-media-wide pt-xl-3 bg-danger">
         <div class="container">
@@ -97,60 +117,96 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus risus, gravida ut commodo
                             non, consequat eget velit. Mauris sit amet nunc justo. </p>
                     </div>
-                    <a href="#" class="btn btn-secondary">Learn More</a>
+                    <a href="#" class="btn btn-secondary mb-1">Learn More</a>
                 </div>
                 <div class="col-lg-6 order-lg-0 h-100">
                     <img src="https://unsplash.it/1200/900"
-                         class="mb-150 mb-lg-0 h-100 img-fluid card-img-top rounded object-fit-cover bg-white" alt="...">
+                         class="mb-150 mb-lg-0 h-100 img-fluid card-img-top rounded object-fit-cover bg-white"
+                         alt="...">
                 </div><!-- col -->
             </div><!-- row -->
         </div><!-- container -->
     </section><!-- text-media-blocked -->
 
-<section class="newsletter-cta bg-primary-subtle">
-    <div class="container py-1">
-        <div class="row justify-content-lg-around align-items-center">
-            <div class="col-lg-4">
-                <h2>Our Newsletters</h2>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
-            </div><!-- col -->
-            <div class="col-lg-5">
-                <p class="mb-0">Embed Gravity Form here</p>
-            </div><!-- col -->
-        </div><!-- row -->
-    </div><!-- container -->
-</section><!-- newsletter-cta -->
-
-<section class="custom-post-blocks">
-    <div class="container">
-        <div class="card mb-2 position-relative border-0">
-            <div class="row g-md-2 align-items-center">
-                <div class="col-md-6 col-lg-5">
-                    <img src="https://unsplash.it/1200/900"
-                         class="h-100 mb-1 rounded object-fit-cover bg-white" alt="...">
-                </div><!-- col -->
-                <div class="col-md-6 col-lg-7">
-                    <div class="card-body">
-                        <h2 class="card-title">Card title</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
-                    </div><!-- card body -->
-                </div><!-- col -->
-            </div><!-- row-->
-            <div class="position-absolute bottom-0 end-0">
-                <p class="card-text text-end pe-150 fw-bold">Show details <span class="ms-250"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                </svg></span></p>
+    <section class="custom-post-blocks">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><p>custom-post-blocks</p></div>
             </div>
-        </div><!-- card -->
-    </div><!-- container -->
-</section><!--custom-post-blocks-->
+            <div class="card mb-2 position-relative border-0">
+                <div class="row g-md-2 align-items-center">
+                    <div class="col-md-6 col-lg-5">
+                        <img src="https://unsplash.it/1200/900"
+                             class="h-100 mb-1 rounded object-fit-cover bg-white" alt="...">
+                    </div><!-- col -->
+                    <div class="col-md-6 col-lg-7 pb-50">
+                        <div class="card-body">
+                            <h2 class="card-title">Card title</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                voluptua. At vero eos et accusam et</p>
+                        </div><!-- card body -->
+                    </div><!-- col -->
+                </div><!-- row-->
+                <div class="position-absolute bottom-0 end-0">
+                    <p class="card-text text-end pe-150 fw-bold">
+                        <a href="#">
+                            Show details <span class="ms-250"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                                </svg>
+                        </span>
+                        </a>
+                    </p>
+                </div>
+            </div><!-- card -->
+        </div><!-- container -->
+    </section><!--custom-post-blocks-->
+
+    <section class="custom-post-blocks">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><p>custom-post-resources</p></div>
+            </div>
+            <div class="card mb-2 position-relative border-0">
+                <div class="row g-md-2">
+                    <div class="col-md-6 col-lg-5">
+                        <img src="https://unsplash.it/1200/900"
+                             class="h-100 mb-1 rounded object-fit-cover bg-white" alt="...">
+                    </div><!-- col -->
+                    <div class="col-md-6 col-lg-7">
+                        <div class="pt-lg-50">
+                            <p class="card-text text-end pe-150 fw-bold py-50">
+                                <a href="#">
+                                    Download <span class="ms-250"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                                </svg></span>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="card-body pt-0">
+                            <h2 class="card-title">Card title</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                voluptua. At vero eos et accusam et</p>
+                        </div><!-- card body -->
+                    </div><!-- col -->
+                </div><!-- row-->
+            </div><!-- card -->
+        </div><!-- container -->
+    </section><!--custom-post-blocks-->
 
     <section class="cards-with-icons bg-success">
         <div class="container">
             <div class="row">
                 <div class="col-12"><p>cards-with-icons</p></div>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-2">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-lg-2">
                 <div class="col">
                     <div class="card h-100 bg-danger rounded py-150 py-xl-2">
                         <img src="https://unsplash.it/400/400"
@@ -200,7 +256,7 @@
             <div class="row">
                 <div class="col-12"><p>columned-media-and-text</p></div>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-2">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-lg-2">
                 <div class="col">
                     <div class="card h-100 bg-transparent border border-0 mb-2">
                         <img src="https://unsplash.it/900/900"
@@ -251,22 +307,25 @@
             <div class="row">
                 <div class="col-12"><p class="text-white">columned-media-and-text</p></div>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-2">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-lg-2">
                 <div class="col">
                     <div class="card h-100 bg-transparent border border-0 rounded-0 mb-2">
                         <img src="https://unsplash.it/900/900"
                              class="mb-150 img-fluid rounded-0 card-img-top object-fit-cover bg-dark" alt="...">
                         <div class="card-body p-0 pe-lg-1">
                             <h5 class="h3 card-title text-white">Program title goes here</h5>
-                            <p class="card-subtitle text-white mb-50 fst-italic">Title: Executive Assistant and Program Administrator</p>
+                            <p class="card-subtitle text-white mb-50 fst-italic">Title: Executive Assistant and Program
+                                Administrator</p>
                             <div class="card-text mb-150 text-white">
-                            <p><b>Short Bio:</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                            accusam et justo duo dolores et ea rebum. </p>
-                            <p>
-                                <b>Contact: email@sample.com<br>
-                                    Phone: 123 456 789</b>
-                            </p>
+                                <p><b>Short Bio:</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                    nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                                    eos et
+                                    accusam et justo duo dolores et ea rebum. </p>
+                                <p>
+                                    <b>Contact: email@sample.com<br>
+                                        Phone: 123 456 789</b>
+                                </p>
                             </div><!-- card-text-->
                         </div><!-- card-body-->
                     </div><!-- card -->
@@ -303,5 +362,6 @@
             </div><!-- row -->
         </div><!-- container -->
     </section><!-- columned-white-media-and-text-on-green -->
+
 
 <?php get_footer();

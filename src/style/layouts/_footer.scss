@@ -66,10 +66,7 @@ footer {
     }
 }
 
-//hide footerslider on for pharmacies and manufactures
-body.page-id-185,
-body.page-id-182 {
-    #footerslider {
-        display: none !important;
-    }
+.footer-logo {
+    width: 200px;
+    height: auto;
 }
