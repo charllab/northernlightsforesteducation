@@ -1,52 +1,65 @@
 <footer>
-    <section class="newsletter-cta bg-primary-subtle">
+    <section class="newsletter-cta bg-green">
         <div class="container py-1">
             <div class="row justify-content-lg-around align-items-center">
                 <div class="col-lg-4">
-                    <h2>Our Newsletters</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                    <h2 class="text-white">Our Newsletters</h2>
+                    <p class="text-white mb-75 mb-lg-50">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
                         ut labore et</p>
                 </div><!-- col -->
-                <div class="col-lg-5">
-                    <p class="mb-0">Embed Gravity Form here</p>
+                <div class="col-lg-6">
+                    <?php
+                    //$form_id = $form_section['form_id'];
+                    $form_id = 2;
+                    ?>
+                    <?php echo do_shortcode('[gravityform id="' . $form_id .'" title="false" ajax="true"]');?>
                 </div><!-- col -->
             </div><!-- row -->
         </div><!-- container -->
     </section><!-- newsletter-cta -->
 
-    <section class="footer-cta bg-dark pt-3 pb-4 pt-xl-4 pb-xl-7">
+    <section class="footer-cta pt-3 pb-4 pt-xl-4 pb-xl-7">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-md-6 col-lg-5">
-                    <h2 class="text-white">Have any question?</h2>
-                    <p class="fst-italic text-white">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-                    <p class="text-white"><b>Phone:</b> (000) - 000 - 000<br>
-                        <b>Email:</b> info@nlfes.com</p>
+                    <div class="pt-1 pt-lg-2">
+                        <h2 class="text-white">Have any question?</h2>
+                        <p class="fst-italic text-white">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                        <p class="text-white"><b>Phone:</b> (000) - 000 - 000<br>
+                            <b>Email:</b> info@nlfes.com</p>
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <p class="text-white">Gravity forms goes here</p>
+                    <div class="contact-form-wrapper p-1 p-md-150 px-lg-4 py-lg-2">
+                        <h2 class="text-white">Contact Us</h2>
+                    <?php
+                    //$form_id = $form_section['form_id'];
+                    $form_id = 1;
+                    ?>
+                    <?php echo do_shortcode('[gravityform id="' . $form_id .'" title="false" ajax="true"]');?>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="footer-details bg-dark">
+    <section class="footer-details text-center text-md-start pb-1">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="footer-logo">
+                <div class="col-12 col-lg-4">
+                    <div class="footer-logo mx-auto mx-lg-start">
                         <a href="<?php echo esc_url(home_url('/')); ?>">
                             <img src="<?php bloginfo('template_url'); ?>/images/logo-white.svg"
                                  alt="<?php bloginfo('name'); ?> - Logo"
-                                 class="img-fluid">
+                                 class="img-fluid mb-150 mb-lg-0">
                             <span class="sr-only"><?php bloginfo('name'); ?></span>
                         </a>
                     </div><!-- nav-logo -->
                 </div><!-- col -->
-                <div class="col-md-3">
+                <div class="col-md-5 col-lg-3">
                     <p class="text-white">
                         <b>Contact us</b><br>
                         PO BOX 123 Address<br>
@@ -56,8 +69,8 @@
                         info@nlfes.com<br>
                     </p>
                 </div><!-- col -->
-                <div class="col-md-3">
-                    <p class="text-white"><b>Quick Links</b></p>
+                <div class="col-md-4 col-lg-3">
+                    <p class="text-white mb-250"><b>Quick Links</b></p>
                     <?php wp_nav_menu([
                         'theme_location' => 'secondary',
                         'container_class' => '',
@@ -68,7 +81,7 @@
                         'walker' => new bootstrap_5_wp_nav_menu_walker(),
                     ]); ?>
                 </div><!-- col -->
-                <div class="col-md-3">
+                <div class="col-md-3 col-lg-2">
                     <p class="text-white small-0">Follow us</p>
                 </div><!-- col -->
             </div><!-- row -->

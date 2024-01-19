@@ -11,7 +11,8 @@
             </div><!-- row -->
 
             <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                <a href="#start" class="text-decoration-none d-flex flex-column align-items-center text-white pb-25 pb-xs-5">
+                <a href="#start"
+                   class="text-decoration-none d-flex flex-column align-items-center text-white pb-25 pb-xs-5">
                     <span>Scroll</span>
                     <img src="<?php bloginfo('template_url'); ?>/images/scroll-bottom-icon.svg"
                          alt="<?php bloginfo('name'); ?> - Logo"
@@ -46,10 +47,9 @@
         </div><!-- container -->
     </section><!-- content-wide -->
 
-    <section class="green-hills-with-sky bg-dark position-relative">
+    <section class="green-hills-with-sky bg-white position-relative">
         <div class="green-hills"></div><!-- green-hills -->
     </section>
-
 
 
     <section class="content-two-thirds bg-green">
@@ -78,14 +78,13 @@
         <div class="snowy-hills"></div><!-- green-hills -->
     </section>
 
-    <section class="text-media-wide pt-xl-3 bg-danger">
+    <section class="text-media-wide pt-xl-3 overflow-x-hidden">
         <div class="container">
-            <div class="row">
-                <div class="col-12"><p>text-media-wide</p></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2 class="h1">Our Approach</h2>
+            <div class="row align-items-center g-lg-3 position-relative">
+                <div class="col-lg-6 order-lg-0 py-lg-6">
+                    <h2 class="h1">
+                        <span>Our Approach</span>
+                    </h2>
                     <div class="mb-175">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus risus, gravida ut commodo
                             non, consequat eget velit. Mauris sit amet nunc justo. Phasellus bibendum sapien vitae dui
@@ -94,21 +93,32 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus risus, gravida ut commodo
                             non, consequat eget velit. Mauris sit amet nunc justo. </p>
                     </div>
-                    <a href="#" class="btn btn-secondary">Learn More</a>
+                    <a href="#" class="btn btn-secondary mb-1">Learn More</a>
                 </div>
-                <div class="col-lg-6"></div><!-- col -->
+                <div class="col-lg-6 order-lg-1 h-100">
+                    <img src="https://unsplash.it/1200/900"
+                         class="mb-150 mb-lg-0 h-100 img-fluid card-img-top object-fit-cover bg-white d-lg-none"
+                         alt="...">
+                    <div class="text-media-wide--img position-absolute d-none d-lg-block">
+                        <img src="https://unsplash.it/1200/900"
+                             class="card-img-top object-fit-cover bg-white"
+                             alt="...">
+                    </div><!-- position-absolute-->
+                </div><!-- col -->
             </div><!-- row -->
         </div><!-- container -->
     </section><!-- text-media-wide -->
 
-    <section class="text-media-blocked pt-xl-3">
+    <section class="text-media-wide pt-xl-3 overflow-x-hidden">
         <div class="container">
             <div class="row">
-                <div class="col-12"><p>text-media-blocked</p></div>
+                <div class="col-12"><p>text-media-wide</p></div>
             </div>
-            <div class="row align-items-center g-lg-3">
-                <div class="col-lg-6 order-lg-1">
-                    <h2 class="h1">Our Sponsor</h2>
+            <div class="row align-items-center g-lg-3 position-relative">
+                <div class="col-lg-6 order-lg-1 py-lg-6">
+                    <h2 class="h1">
+                        <span>Our Approach</span>
+                    </h2>
                     <div class="mb-175">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus risus, gravida ut commodo
                             non, consequat eget velit. Mauris sit amet nunc justo. Phasellus bibendum sapien vitae dui
@@ -121,7 +131,41 @@
                 </div>
                 <div class="col-lg-6 order-lg-0 h-100">
                     <img src="https://unsplash.it/1200/900"
-                         class="mb-150 mb-lg-0 h-100 img-fluid card-img-top rounded object-fit-cover bg-white"
+                         class="mb-150 mb-lg-0 h-100 img-fluid card-img-top rounded border border-dark object-fit-cover bg-white d-lg-none"
+                         alt="...">
+                    <div class="text-media-wide--img position-absolute d-none d-lg-block">
+                        <img src="https://unsplash.it/1200/900"
+                             class="card-img-top object-fit-cover bg-white"
+                             alt="...">
+                    </div><!-- position-absolute-->
+                </div><!-- col -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </section><!-- text-media-wide -->
+
+    <section class="text-media-blocked pt-xl-3 overflow-x-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><p>text-media-blocked</p></div>
+            </div>
+            <div class="row align-items-center g-lg-3">
+                <div class="col-lg-6 order-lg-1">
+                    <h2 class="h1">
+                        <span>Our Sponsor</span>
+                    </h2>
+                    <div class="mb-175">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus risus, gravida ut commodo
+                            non, consequat eget velit. Mauris sit amet nunc justo. Phasellus bibendum sapien vitae dui
+                            laoreet efficitur. Duis gravida auctor lacus, in mollis elit eleifend quis. Pellentesque
+                            vulputate.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus risus, gravida ut commodo
+                            non, consequat eget velit. Mauris sit amet nunc justo. </p>
+                    </div>
+                    <a href="#" class="btn btn-secondary mb-1">Learn More</a>
+                </div>
+                <div class="col-lg-6 order-lg-0 h-100">
+                    <img src="https://unsplash.it/1200/900"
+                         class="mb-150 mb-lg-0 h-100 img-fluid card-img-top rounded border border-dark object-fit-cover bg-white"
                          alt="...">
                 </div><!-- col -->
             </div><!-- row -->
@@ -165,12 +209,12 @@
         </div><!-- container -->
     </section><!--custom-post-blocks-->
 
-    <section class="custom-post-blocks">
+    <section class="custom-post-blocks bg-green">
         <div class="container">
             <div class="row">
                 <div class="col-12"><p>custom-post-resources</p></div>
             </div>
-            <div class="card mb-2 position-relative border-0">
+            <div class="card mb-2 position-relative border-0 bg-green">
                 <div class="row g-md-2">
                     <div class="col-md-6 col-lg-5">
                         <img src="https://unsplash.it/1200/900"
@@ -178,20 +222,26 @@
                     </div><!-- col -->
                     <div class="col-md-6 col-lg-7">
                         <div class="pt-lg-50">
-                            <p class="card-text text-end pe-150 fw-bold py-50">
-                                <a href="#">
+                            <p class="card-text text-end pe-150 fw-bold pt-50">
+                                <a href="#" class="text-white">
                                     Download <span class="ms-250"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor"
                                             class="bi bi-arrow-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
                                           d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                </svg></span>
+                                </svg>
+                                    </span>
+                                    <img src="<?php bloginfo('template_url'); ?>/images/icons-download.svg"
+                                         alt=" "
+                                         class="d-block mt-250 icons-download">
                                 </a>
                             </p>
                         </div>
                         <div class="card-body pt-0">
-                            <h2 class="card-title">Card title</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            <h2 class="card-title text-white">Card title</h2>
+                            <p class="card-text text-white">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam
                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
                                 voluptua. At vero eos et accusam et</p>
                         </div><!-- card body -->
@@ -207,8 +257,8 @@
                 <div class="col-12"><p>cards-with-icons</p></div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-lg-2">
-                <div class="col">
-                    <div class="card h-100 bg-danger rounded py-150 py-xl-2">
+                <div class="col mb-1">
+                    <div class="card h-100 rounded bg-white bg-opacity-50 py-150 py-xl-2 border-0">
                         <img src="https://unsplash.it/400/400"
                              class="mb-150 img-fluid card-img-top object-fit-cover rounded-circle bg-white" alt="...">
                         <div class="card-body px-xl-2 py-0 text-center">

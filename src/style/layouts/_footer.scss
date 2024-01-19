@@ -70,3 +70,17 @@ footer {
     width: 200px;
     height: auto;
 }
+
+footer {
+    #menu-footer-menu {
+        margin-bottom: $spacer;
+        .nav-link {
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.85;
+            padding: 0;
+            text-decoration: underline;
+        }
+    }
+}
