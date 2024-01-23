@@ -255,13 +255,13 @@ img.icons-download {
     }
     @include media-breakpoint-up(xwide) {
         width: 50%;
-        width: calc(1766px / 2.25);
+        width: calc(1766px / 2);
     }
 }
 
-.order-lg-1 .text-media-wide--img {
+.order-lg-last .text-media-wide--img {
     left: 51% !important;
 }
-.order-lg-0 .text-media-wide--img {
+.order-lg-first .text-media-wide--img {
     right: 51% !important;
 }
