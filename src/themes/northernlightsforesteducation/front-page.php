@@ -9,29 +9,6 @@
 
         <h1>Here</h1>
 
-        <section class="content-two-thirds bg-green">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12"><p class="text-white">content-two-thirds</p></div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 col-xl-7 col-xxl-6">
-                        <h2 class="h1 text-white">
-                            <span class="h6 d-block text-white">Meet our Leadership Team</span>
-                            H1 Lorem ipsum dolor. consetetur sadipscing elitr.
-                        </h2>
-                        <div class="lead mb-175 text-white">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                accusam
-                                et</p>
-                        </div>
-                        <a href="#" class="btn btn-outline-light">Learn More</a>
-                    </div><!-- col -->
-                </div><!-- row -->
-            </div><!-- container -->
-        </section><!-- content-two-thirds -->
-
         <section class="snowy-hills-on-green bg-green position-relative">
             <div class="snowy-hills"></div><!-- green-hills -->
         </section>
@@ -117,113 +94,7 @@
             </div><!-- container -->
         </section><!--custom-post-blocks-->
 
-        <section class="cards-with-icons bg-success">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12"><p>cards-with-icons</p></div>
-                </div>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-lg-2">
-                    <div class="col mb-1">
-                        <div class="card h-100 rounded bg-white bg-opacity-50 py-150 py-xl-2 border-0">
-                            <img src="https://unsplash.it/400/400"
-                                 class="mb-150 img-fluid card-img-top object-fit-cover rounded-circle bg-white"
-                                 alt="...">
-                            <div class="card-body px-xl-2 py-0 text-center">
-                                <h3 class="text-dark card-title mb-150">Lorem ipsum dolor sit amet, consetetur
-                                    sadipscing
-                                    elitr, sed</h3>
-                                <a href="#" class="btn btn-secondary">Learn More</a>
-                            </div><!-- card-body-->
-                        </div><!-- card -->
-                    </div><!-- col -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a short card.</p>
-                            </div><!-- card-body-->
-                        </div><!-- card -->
-                    </div><!-- col -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content.</p>
-                            </div><!-- card-body-->
-                        </div><!-- card -->
-                    </div><!-- col -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content. This content is a little bit longer.</p>
-                            </div><!-- card-body-->
-                        </div><!-- card -->
-                    </div><!-- col -->
-                </div><!-- row -->
-            </div><!-- container -->
-        </section><!-- cards-with-icons-->
 
-        <section class="columned-media-and-text bg-warning">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12"><p>columned-media-and-text</p></div>
-                </div>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-lg-2">
-                    <div class="col">
-                        <div class="card h-100 bg-transparent border border-0 mb-2">
-                            <img src="https://unsplash.it/900/900"
-                                 class="mb-1 img-fluid card-img-top object-fit-cover rounded bg-dark" alt="...">
-                            <div class="card-body p-0">
-                                <h5 class="p mb-150 card-title">Program title goes here</h5>
-                                <p class="card-text mb-150">This is a longer card with supporting text below as a
-                                    natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <a href="#" class="btn btn-secondary">Learn More</a>
-                            </div><!-- card-body-->
-                        </div><!-- card -->
-                    </div><!-- col -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a short card.</p>
-                            </div><!-- card-body-->
-                        </div><!-- card -->
-                    </div><!-- col -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content.</p>
-                            </div><!-- card-body-->
-                        </div><!-- card -->
-                    </div><!-- col -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content. This content is a little bit longer.</p>
-                            </div><!-- card-body-->
-                        </div><!-- card -->
-                    </div><!-- col -->
-                </div><!-- row -->
-            </div><!-- container -->
-        </section><!-- columned-media-and-text -->
 
         <section class="columned-white-media-and-text bg-dark">
             <div class="container">

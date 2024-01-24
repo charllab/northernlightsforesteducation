@@ -73,3 +73,7 @@ body #gform_2 .gform_footer input[type=submit] {
         background-color: $secondary;
     }
 }
+.btn.btn-outline-success,
+.btn.btn-outline-light {
+    border-width: 2px; /* or any size you prefer */
+}
