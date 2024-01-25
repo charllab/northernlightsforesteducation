@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <div class="nav-logo">
-                <a href="<?php echo esc_url(home_url('/')); ?>">
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="text-decoration-none">
                     <img src="<?php bloginfo('template_url'); ?>/images/logo.svg"
                          alt="<?php bloginfo('name'); ?> - Logo"
                          class="img-fluid">

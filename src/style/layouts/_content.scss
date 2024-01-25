@@ -53,6 +53,9 @@ section {
     padding-top: $spacer/4;
     padding-bottom: $spacer/4;
 }
+main {
+    overflow-x: hidden;
+}
 
 .bg-white {
     background-color: #fff;
@@ -287,10 +290,53 @@ img.icons-download {
 
 .module-color--open-curve {
     background-color: #E4EFDA;
+    background-repeat: no-repeat;
+    background-position: top center;
+    @media only screen and (max-width: 375px) {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='375' height='140.478' viewBox='0 0 375 140.478'%3E%3Cpath id='Path_4173' data-name='Path 4173' d='M-14561.289-12390.354h375v140.478Z' transform='translate(14561.289 12390.354)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    }
+    @media only screen and (max-width: 1280px) {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1280' height='478.621' viewBox='0 0 1280 478.621'%3E%3Cpath id='Path_4175' data-name='Path 4175' d='M-14561.289-12390.354h1280v478.621Z' transform='translate(14561.289 12390.354)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    }
+    @media only screen and (max-width: 1536px) {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1536' height='587.328' viewBox='0 0 1536 587.328'%3E%3Cpath id='Path_4177' data-name='Path 4177' d='M-14561.289-12390.355h1536v587.328Z' transform='translate(14561.289 12390.355)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    }
+    @media only screen and (max-width: 1920px) {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920.001' height='538.287' viewBox='0 0 1920.001 538.287'%3E%3Cpath id='Path_4180' data-name='Path 4180' d='M-14561.291-12390.355h1920v538.287Z' transform='translate(14561.291 12390.355)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    }
+    @media only screen and (min-width: 2000px) {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2560' height='539.542' viewBox='0 0 2560 539.542'%3E%3Cpath id='Path_4181' data-name='Path 4181' d='M-14561.289-12390.354h2560v539.542Z' transform='translate(14561.289 12390.354)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    }
 }
 .module-color--lime {
     background-color: #E4EFDA;
 }
 .module-color--close-curve {
     background-color: #E4EFDA;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    @media only screen and (max-width: 375px) {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='375' height='141.976' viewBox='0 0 375 141.976'%3E%3Cpath id='Path_4174' data-name='Path 4174' d='M-14561.288-12248.379h375v-141.976Z' transform='translate(14561.288 12390.354)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    }
+    @media only screen and (max-width: 1280px) {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1280.002' height='478.621' viewBox='0 0 1280.002 478.621'%3E%3Cpath id='Path_4176' data-name='Path 4176' d='M-14561.291-11911.732h1280v-478.621Z' transform='translate(14561.291 12390.354)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    }
+    @media only screen and (max-width: 1536px) {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1536' height='587.328' viewBox='0 0 1536 587.328'%3E%3Cpath id='Path_4178' data-name='Path 4178' d='M-14561.289-11803.027h1536v-587.328Z' transform='translate(14561.289 12390.355)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    }
+    @media only screen and (max-width: 1920px) {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920.001' height='538.287' viewBox='0 0 1920.001 538.287'%3E%3Cpath id='Path_4179' data-name='Path 4179' d='M-14561.291-11852.068h1920v-538.287Z' transform='translate(14561.291 12390.355)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    }
+    @media only screen and (min-width: 2000px) {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2560' height='539.542' viewBox='0 0 2560 539.542'%3E%3Cpath id='Path_4182' data-name='Path 4182' d='M-14561.287-11850.813h2560v-539.542Z' transform='translate(14561.287 12390.355)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    }
+}
+.sr-only {
+    color: white !important;
+    text-decoration: none !important;
+}
+.page-template-default {
+    #final {
+        display: none;
+    }
 }

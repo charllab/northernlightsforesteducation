@@ -1,5 +1,6 @@
 <?php
 $body = get_field('body');
+if ($body) :
 $layouts = $body['layout'];
 if ($layouts) : ?>
     <?php $counter = 0;
@@ -78,7 +79,6 @@ if ($layouts) : ?>
             $header = $text['header'];
             $text = $text['content'];
             $bg_curve = $layout['background_curve'];
-            dump($bg_curve);
             ?>
 
             <section class="text-media-wide pt-lg-3 pb-lg-1 py-xxxl-3 module-color--<?php echo $bg_curve; ?>">
@@ -366,4 +366,5 @@ if ($layouts) : ?>
     endforeach;
     wp_reset_postdata();
     ?>
-<?php endif; ?>
+<?php endif;
+endif; ?>

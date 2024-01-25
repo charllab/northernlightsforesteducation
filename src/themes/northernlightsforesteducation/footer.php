@@ -14,7 +14,7 @@ $above_header = $text['above_header'];
 $header = $text['header'];
 $text = $text['content'];
 ?>
-<section class="text-media-blocked py-2">
+<section class="text-media-blocked py-2" id="final">
     <div class="container">
         <div class="row align-items-center g-lg-3">
             <div class="col-lg-6">
