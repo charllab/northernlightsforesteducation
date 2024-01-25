@@ -139,9 +139,12 @@ section {
 }
 
 .snowy-hills-on-green {
-    height: $spacer*12;
+    height: $spacer*6;
     z-index: 1;
     margin-top: -2px;
+    @include media-breakpoint-up(lg) {
+        height: $spacer*12;
+    }
 }
 
 .column-content--green-tint {
@@ -280,4 +283,14 @@ img.icons-download {
 .module-color--green + .green-hills-with-sky,
 .module-color--grey + .green-hills-with-sky {
     margin-top: 0;
+}
+
+.module-color--open-curve {
+    background-color: #E4EFDA;
+}
+.module-color--lime {
+    background-color: #E4EFDA;
+}
+.module-color--close-curve {
+    background-color: #E4EFDA;
 }

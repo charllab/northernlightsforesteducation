@@ -45,6 +45,11 @@ h2, .h2 {
         font-size: 2rem;
     }
 }
+.text-media-blocked {
+    h1, .h1, h2, .h2 {
+        max-width: 400px;
+    }
+}
 
 h3, .h3 {
     font-size: 1.1rem;

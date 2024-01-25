@@ -1,11 +1,67 @@
-<footer>
+<?php
+$involved = get_field('get_involved', 'options');
+//acf fields data
+// structure > media (group)
+$media = $involved['media'];
+// structure > text (group)
+$text = $involved['text'];
+// structure > text > button (group)
+$buttons = $involved['text']['buttons']['button'];
 
+$image = $media['image'];
+$alignment = $media['alignment'];
+$above_header = $text['above_header'];
+$header = $text['header'];
+$text = $text['content'];
+?>
+<section class="text-media-blocked py-2">
+    <div class="container">
+        <div class="row align-items-center g-lg-3">
+            <div class="col-lg-6">
+                <?php if (!empty($above_header)): ?>
+                    <h6 class="d-block"><?php echo $above_header; ?></h6>
+                <?php endif; ?>
+                <h2 class="h1">
+                    <span><?php echo $header; ?></span>
+                </h2>
+                <div class="mb-175">
+                    <?php echo $text; ?>
+                </div><!-- mb -->
+                <?php if (!empty($buttons)): ?>
+                    <div class="column-content--button-set mb-1 mb-md-0">
+                        <?php foreach ($buttons as $button) :
+                            $target = $button['link']['target'] ?>
+                            <a href="<?php echo esc_url($button['link']['url']); ?>"
+                               class="btn <?php echo $button['style']; ?> mb-1"
+                                <?php if (!empty($target)): ?>
+                                    target="<?php echo $target ?>"
+                                <?php endif; ?>
+                            >
+                                <?php echo $button['link']['title']; ?>
+                            </a>
+                        <?php endforeach; ?>
+                    </div><!-- column-content--button-set -->
+                <?php endif; ?>
+            </div><!-- col -->
+            <div class="col-lg-6 order-lg-<?php echo $alignment; ?> h-100">
+                <img src="<?php echo esc_url($image['url']); ?>"
+                     class="mb-150 mb-lg-0 h-100 img-fluid card-img-top rounded border border-dark object-fit-cover bg-white"
+                     loading="lazy"
+                     alt="<?php echo $image['alt']; ?>"
+                >
+            </div><!-- col -->
+        </div><!-- row -->
+    </div><!-- container -->
+</section><!-- text-media-blocked -->
+
+
+<footer>
     <?php
     $newsletter = get_field('newsletter', 'options');
     $blurb = $newsletter['blurb'];
     $form_id = $newsletter['form_id'];
     ?>
-    <section class="newsletter-cta bg-green <?php echo $newsletter['show_hide']; ?>">
+    <section id="contact" class="newsletter-cta py-1 bg-green <?php echo $newsletter['show_hide']; ?>">
         <div class="container">
             <div class="row justify-content-lg-around align-items-center">
                 <div class="col-lg-4">

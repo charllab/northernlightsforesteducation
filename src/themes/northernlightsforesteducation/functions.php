@@ -69,3 +69,10 @@ if (function_exists('acf_add_options_page')) {
         'redirect' => false
     ]);
 }
+
+//remove blogs
+function remove_posts_menu() {
+    remove_menu_page('edit.php');
+}
+add_action('admin_menu', 'remove_posts_menu');
+

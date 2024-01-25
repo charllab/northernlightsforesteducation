@@ -2,14 +2,14 @@
 $hero = get_field('header');
 if($hero) :
     $heading = $hero['heading'];
-    $blurb = $hero['heading'];
+    $blurb = $hero['banner_blurb'];
     $buttons = $hero['buttons_outline']['button'];
     $image = $hero['banner_image'];
     ?>
     <section class="content-hero vh-100 pb-2 pt-0 position-relative" style="background: url(<?php echo esc_url($image['url']); ?>); background-repeat: no-repeat; background-size: cover; background-position: bottom center;">
         <div class="snowy-hills"></div><!-- snowy-hills -->
         <div class="container h-100 d-flex align-items-center position-relative">
-            <div class="row">
+            <div class="row w-100">
                 <div class="col-xl-7">
                     <h1 class="text-white"><?php echo $heading; ?></h1>
                     <h2 class="text-white fw-normal"><?php echo $blurb; ?></h2>

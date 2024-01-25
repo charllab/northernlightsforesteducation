@@ -77,9 +77,11 @@ if ($layouts) : ?>
             $above_header = $text['above_header'];
             $header = $text['header'];
             $text = $text['content'];
+            $bg_curve = $layout['background_curve'];
+            dump($bg_curve);
             ?>
 
-            <section class="text-media-wide pt-lg-3 pb-lg-1 py-xxxl-3">
+            <section class="text-media-wide pt-lg-3 pb-lg-1 py-xxxl-3 module-color--<?php echo $bg_curve; ?>">
                 <div class="container">
                     <div class="row align-items-center g-lg-3 position-relative">
                         <div class="col-lg-6 py-lg-3 py-xxxl-6">
