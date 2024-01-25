@@ -335,8 +335,17 @@ img.icons-download {
     color: white !important;
     text-decoration: none !important;
 }
-.page-template-default {
+.program-template-default.single,
+.privacy-policy {
     #final {
         display: none;
+    }
+}
+
+.eventsingleimg-wrapper {
+    img {
+        background-color: #ccc;
+        height: 300px;
+        width: 100%;
     }
 }

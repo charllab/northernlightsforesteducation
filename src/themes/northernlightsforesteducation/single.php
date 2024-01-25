@@ -2,53 +2,43 @@
 get_header();
 ?>
 
-    <main class="py-1 py-lg-2">
+    <main class="py-1">
 
         <?php
         // Start the loop.
         while (have_posts()) : the_post(); ?>
 
-            <?php $date = get_field('event_date');
-            $date1 = date("j", strtotime($date));
-            $date2 = date("M", strtotime($date));
-            $date3 = date("F j, l", strtotime($date));
-            ?>
-
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="eventsingleimg-wrapper py-1 pt-md-3 px-sm-1 px-lg-3">
-                            <div class="card-dateblock d-flex flex-column justify-content-center text-center">
-                                <span><?php echo $date1; ?></span>
-                                <?php echo $date2; ?>
-                            </div><!-- card-dateblock -->
-                            <img src="<?php the_field('event_image')['sizes']['eventimage']; ?>" alt="<?php echo the_title(); ?>"
-                                 class="img-fluid d-block blog-article-image mx-auto">
+                    <div class="col-12 col-md-10">
+                        <h1 class="h3 blog-article-header"><?php echo the_title(); ?></h1>
+                        <div class="eventsingleimg-wrapper">
+                            <?php
+                            if ( has_post_thumbnail() ) {
+                                $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
+                                echo '<img src="' . esc_url($featured_img_url) . '" class="img-fluid rounded object-fit-cover mb-2">';
+                            }
+                            ?>
                         </div><!-- eventsingleimg-wrapper -->
                     </div><!-- col -->
                 </div><!-- row -->
-                <div class="row justify-content-center mb-2 mb-lg-4">
-                    <div class="col-12 col-sm-10 col-lg-9">
-                        <h1 class="blog-article-header"><?php echo the_title(); ?></h1>
-                        <h3><?php echo $date3; ?>, <?php the_field('event_starttime'); ?>
-                            to <?php the_field('event_endtime'); ?></h3>
-                        <?php the_content(); ?>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10">
 
+                        <div class="entry-content">
+                            <?php
+                            the_content();
+                            ?>
+                        </div><!-- .entry-content -->
                     </div><!-- col -->
                 </div><!-- row -->
 
-                <div class="row justify-content-center mb-2">
-                    <div class="col-12 text-center">
-                        <a href="<?php bloginfo('url'); ?>/events" class="btn btn-primary">Back To All Events</a>
+                <div class="row justify-content-center">
+                    <div class="col-6 col-md-5">
+                        <span class="nav-previous"><?php previous_post_link('%link', '<span class="meta-nav">' . _x('&larr;', 'Previous post link', 'sproingcreative') . '</span> Prev'); ?></span>
                     </div><!-- col -->
-                </div><!-- row -->
-
-                <div class="row justify-content-center blog-nav-single">
-                    <div class="col-6 col-lg-5">
-                        <span class="nav-previous"><?php previous_post_link('%link', '<span class="meta-nav">' . _x('&larr;', 'Previous post link', 'sproingcreative') . '</span> %title'); ?></span>
-                    </div><!-- col -->
-                    <div class="col-6 col-lg-5 d-flex justify-content-end blog-nav-single-right">
-                        <span class="nav-next"><?php next_post_link('%link', '%title <span class="meta-nav">' . _x('&rarr;', 'Next post link', 'sproingcreative') . '</span>'); ?></span>
+                    <div class="col-6 col-md-5 d-flex justify-content-end blog-nav-single-right">
+                        <span class="nav-next"><?php next_post_link('%link', 'Next <span class="meta-nav">' . _x('&rarr;', 'Next post link', 'sproingcreative') . '</span>'); ?></span>
                     </div><!-- col -->
                 </div><!-- row -->
 

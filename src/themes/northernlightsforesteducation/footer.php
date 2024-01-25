@@ -61,7 +61,8 @@ $text = $text['content'];
     $blurb = $newsletter['blurb'];
     $form_id = $newsletter['form_id'];
     ?>
-    <section id="contact" class="newsletter-cta py-1 bg-green <?php echo $newsletter['show_hide']; ?>">
+
+    <section class="newsletter-cta py-1 bg-green <?php echo $newsletter['show_hide']; ?>">
         <div class="container">
             <div class="row justify-content-lg-around align-items-center">
                 <div class="col-lg-4">
@@ -76,7 +77,7 @@ $text = $text['content'];
             </div><!-- row -->
         </div><!-- container -->
     </section><!-- newsletter-cta -->
-
+    <div id="contact"></div>
     <?php
     $footer_content = get_field('footer_contact_section', 'options');
     $background_image = $footer_content['background_image'];
@@ -119,13 +120,16 @@ $text = $text['content'];
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-4">
-                        <div class="footer-logo mx-auto mx-lg-start">
+                        <div class="footer-logo mx-auto mx-lg-start mb-150 mb-lg-0">
                             <a href="<?php echo esc_url(home_url('/')); ?>">
                                 <img src="<?php bloginfo('template_url'); ?>/images/logo-white.svg"
                                      alt="<?php bloginfo('name'); ?> - Logo"
-                                     class="img-fluid mb-150 mb-lg-0">
+                                     class="img-fluid mb-250">
                                 <span class="sr-only"><?php bloginfo('name'); ?></span>
                             </a>
+                            <div class="w-100 text-center text-white">
+                                <p class="small">Website sponsored by <a href="https://friaa.ab.ca/" class="text-white">FRIAA</a></p>
+                            </div>
                         </div><!-- nav-logo -->
                     </div><!-- col -->
                     <div class="col-md-5 col-lg-3">

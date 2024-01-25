@@ -1,21 +1,29 @@
 <?php get_header(); ?>
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 py-2">
-                    <?php if (have_posts()) : ?>
+        <?php if (is_page([3])) : ?>
 
-                        <?php /* Start the Loop */ ?>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 py-2">
+                        <?php if (have_posts()) : ?>
 
-                        <?php while (have_posts()) : the_post(); ?>
+                            <?php /* Start the Loop */ ?>
 
-                            <?php the_content(); ?>
+                            <?php while (have_posts()) : the_post(); ?>
 
-                        <?php endwhile; ?>
+                                <?php the_content(); ?>
 
-                    <?php endif; ?>
+                            <?php endwhile; ?>
+
+                        <?php endif; ?>
+                    </div>
                 </div>
             </div>
-        </div>
+        <?php else : ?>
+
+            <?php get_template_part('partials/hero/page-hero'); ?>
+            <?php get_template_part('partials/body/flexible-content'); ?>
+
+        <?php endif; ?>
     </main>
 <?php get_footer();

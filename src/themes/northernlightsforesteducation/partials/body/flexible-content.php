@@ -302,7 +302,7 @@ if ($layouts) : ?>
                     </div><!-- row -->
                 </div><!-- container -->
             </section><!-- columned-media-and-text -->
-        <?php elseif ($layout['acf_fc_layout'] == 'content_columned'): ?>
+        <?php elseif ($layout['acf_fc_layout'] == 'columned_content'): ?>
             <?php
             $column_index = $layout['columned_content']['column'];
             //dump($column_index);
