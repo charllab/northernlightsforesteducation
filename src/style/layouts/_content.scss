@@ -202,6 +202,14 @@ main {
         height: 332px;
     }
 }
+
+.columned-media-and-text {
+    @include media-breakpoint-up(xl) {
+        .col:nth-child(3n+2) {
+            margin-top: 48px;
+        }
+    }
+}
 .custom-post-blocks {
     img {
         height: auto;
@@ -335,6 +343,8 @@ img.icons-download {
     color: white !important;
     text-decoration: none !important;
 }
+
+.event-template-default.single,
 .program-template-default.single,
 .privacy-policy {
     #final {
