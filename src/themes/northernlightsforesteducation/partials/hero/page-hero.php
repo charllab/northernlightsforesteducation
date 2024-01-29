@@ -7,6 +7,7 @@ if($hero) :
     $image = $hero['banner_image'];
     ?>
     <section class="content-hero vh-100 pb-2 pt-0 position-relative" style="background: url(<?php echo esc_url($image['url']); ?>); background-repeat: no-repeat; background-size: cover; background-position: bottom center;">
+        <div class="block__tint-overlay position-absolute h-100"></div>
         <div class="snowy-hills"></div><!-- snowy-hills -->
         <div class="container h-100 d-flex align-items-center position-relative">
             <div class="row w-100">

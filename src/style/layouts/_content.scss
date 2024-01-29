@@ -33,6 +33,7 @@
 .bg-green {
     background-color: #ecf2e8;
 }
+
 .bg-grey {
     background-color: #ecedee;
 }
@@ -43,8 +44,21 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #e2e8ef;
-    mix-blend-mode: lighten;
+    background: rgb(14, 122, 105);
+    background: linear-gradient(252deg, #edfffc 0%, #556fbc 100%);
+    mix-blend-mode: multiply;
+}
+
+.block__tint-grey {
+    opacity: .15;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(177, 177, 177);
+    background: linear-gradient(90deg, rgba(177, 177, 177, 1) 25%, rgba(234, 234, 234, 1) 100%);
+    mix-blend-mode: screen;
+    border-radius: 20px;
 }
 
 section {
@@ -53,6 +67,7 @@ section {
     padding-top: $spacer/4;
     padding-bottom: $spacer/4;
 }
+
 main {
     overflow-x: hidden;
 }
@@ -97,8 +112,8 @@ main {
 }
 
 .content-hero {
-    background: rgb(123,177,64);
-    background: linear-gradient(0deg, rgba(123,177,64,1) 0%, rgba(4,15,43,1) 100%);
+    background: rgb(123, 177, 64);
+    background: linear-gradient(0deg, rgba(123, 177, 64, 1) 0%, rgba(4, 15, 43, 1) 100%);
 }
 
 .scroll-icon {
@@ -119,6 +134,7 @@ main {
         background-size: 200%;
     }
 }
+
 .green-hills {
     position: absolute;
     bottom: -1px;
@@ -197,6 +213,7 @@ main {
         height: 174px;
     }
 }
+
 .columned-media-and-text, .columned-white-media-and-text {
     .card-img-top {
         height: 332px;
@@ -210,6 +227,7 @@ main {
         }
     }
 }
+
 .custom-post-blocks {
     img {
         height: auto;
@@ -224,10 +242,12 @@ main {
     h2.h1 {
         position: relative;
         overflow: hidden;
+
         span {
             position: relative;
             z-index: 2;
         }
+
         &::before {
             z-index: 1;
             position: absolute;
@@ -239,6 +259,7 @@ main {
         }
     }
 }
+
 img.icons-download {
     margin-left: auto;
     width: auto;
@@ -248,7 +269,7 @@ img.icons-download {
 
 .contact-form-wrapper {
     border-radius: 8px;
-    background-color: rgba($dark,.62);
+    background-color: rgba($dark, .62);
 }
 
 .text-media-wide--img {
@@ -278,15 +299,19 @@ img.icons-download {
 .order-lg-last .text-media-wide--img {
     left: 51% !important;
 }
+
 .order-lg-first .text-media-wide--img {
     right: 51% !important;
 }
+
 .module-color--green {
     background-color: #366141;
+
     *:not(.text-dark) {
         color: white !important;
     }
 }
+
 .module-color--grey {
     background-color: #f0f0f0;
 }
@@ -316,9 +341,11 @@ img.icons-download {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2560' height='539.542' viewBox='0 0 2560 539.542'%3E%3Cpath id='Path_4181' data-name='Path 4181' d='M-14561.289-12390.354h2560v539.542Z' transform='translate(14561.289 12390.354)' fill='%23fff'/%3E%3C/svg%3E%0A");
     }
 }
+
 .module-color--lime {
     background-color: #E4EFDA;
 }
+
 .module-color--close-curve {
     background-color: #E4EFDA;
     background-repeat: no-repeat;
@@ -339,6 +366,7 @@ img.icons-download {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2560' height='539.542' viewBox='0 0 2560 539.542'%3E%3Cpath id='Path_4182' data-name='Path 4182' d='M-14561.287-11850.813h2560v-539.542Z' transform='translate(14561.287 12390.355)' fill='%23fff'/%3E%3C/svg%3E%0A");
     }
 }
+
 .sr-only {
     color: white !important;
     text-decoration: none !important;
@@ -357,5 +385,22 @@ img.icons-download {
         background-color: #ccc;
         height: 300px;
         width: 100%;
+    }
+}
+
+.owl-carousel-logos {
+    .item {
+        background-color: #fff;
+        border-radius: 20px;
+        border: 1px solid #ededed;
+        img {
+            height: 200px;
+            @include media-breakpoint-up(lg) {
+                height: 240px;
+            }
+            @include media-breakpoint-up(xxl) {
+                height: 280px;
+            }
+        }
     }
 }
