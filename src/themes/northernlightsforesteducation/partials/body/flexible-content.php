@@ -267,7 +267,7 @@ if ($body) :
                 $intro = $layout['section_intro_optional'];
                 $outro = $layout['section_outro_optional'];
                 ?>
-                <div class="container py-3">
+                <div class="container py-150">
                     <div class="row">
                         <div class="col-12 text-center">
                             <h2><?php echo $layout['section_title'];?></h2>
@@ -371,6 +371,95 @@ if ($body) :
                         </div><!-- row -->
                     </div><!-- container -->
                 </section><!-- columned-white-media-and-text-on-green -->
+
+            <?php elseif ($layout['acf_fc_layout'] == 'slider_events'): ?>
+                <?php
+                $args = array(
+                    'post_type' => 'event',
+                    'posts_per_page' => 9, // Set to a specific number if you want to limit the number of products
+                );
+
+                $event_query = new WP_Query($args);
+
+                if ($event_query->have_posts()) : ?>
+                    <div class="container py-150">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="text-center">What’s New - Events</h2>
+                            </div>
+                        </div>
+                        <div class="owl-carousel owl-carousel-content owl-theme">
+
+                            <?php while ($event_query->have_posts()) : $event_query->the_post();
+                                $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full'); // Get the featured image URL
+                                if (!$featured_img_url) {
+                                    $logo_url = get_template_directory_uri() . '/images/placeholder-440by332.png'; // Get the logo URL
+                                    $featured_img_url = $logo_url; // Set the logo URL as the default image
+                                }
+                                ?>
+                                <div class="item position-relative" style="background: white url('<?php echo $featured_img_url; ?>') no-repeat; background-size: cover;">
+                                    <div class="position-absolute h-100 block__tint-grey--darker"></div>
+                                    <div class="post-content d-flex flex-column justify-content-end position-relative z-index-10 p-2">
+                                        <h2 class="h3 card-title text-white"><?php the_title(); ?></h2>
+                                        <div class="card-text text-white">
+                                            <?php echo get_the_excerpt(); ?>
+                                        </div>
+                                        <a href="<?php echo get_permalink(); ?>" class="btn btn-secondary mt-150">Read more</a>
+                                    </div>
+                                </div><!-- item-->
+
+                            <?php
+                            endwhile; ?>
+                        </div><!-- owl -->
+                    </div><!-- container -->
+                <?php endif;
+                wp_reset_postdata();
+                ?>
+
+            <?php elseif ($layout['acf_fc_layout'] == 'slider_programs'): ?>
+                <?php
+                $args = array(
+                    'post_type' => 'program',
+                    'posts_per_page' => 9, // Set to a specific number if you want to limit the number of products
+                );
+
+                $event_query = new WP_Query($args);
+
+                if ($event_query->have_posts()) : ?>
+                    <div class="container py-150">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="text-center">What’s New - Programs</h2>
+                            </div>
+                        </div>
+                        <div class="owl-carousel owl-carousel-content owl-theme">
+
+                            <?php while ($event_query->have_posts()) : $event_query->the_post();
+                                $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full'); // Get the featured image URL
+                                if (!$featured_img_url) {
+                                    $logo_url = get_template_directory_uri() . '/images/placeholder-440by332.png'; // Get the logo URL
+                                    $featured_img_url = $logo_url; // Set the logo URL as the default image
+                                }
+                                ?>
+                                <div class="item position-relative" style="background: white url('<?php echo $featured_img_url; ?>') no-repeat; background-size: cover;">
+                                    <div class="position-absolute h-100 block__tint-grey--darker"></div>
+                                    <div class="post-content d-flex flex-column justify-content-end position-relative z-index-10 p-2">
+                                        <h2 class="h3 card-title text-white"><?php the_title(); ?></h2>
+                                        <div class="card-text text-white">
+                                            <?php echo get_the_excerpt(); ?>
+                                        </div>
+                                        <a href="<?php echo get_permalink(); ?>" class="btn btn-secondary mt-150">Read more</a>
+                                    </div>
+                                </div><!-- item-->
+
+                            <?php
+                            endwhile; ?>
+                        </div><!-- owl -->
+                    </div><!-- container -->
+                <?php endif;
+                wp_reset_postdata();
+                ?>
+
 
             <?php elseif ($layout['acf_fc_layout'] == 'forest_white_hills'): ?>
                 <?php

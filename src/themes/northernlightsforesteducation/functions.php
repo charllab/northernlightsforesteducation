@@ -76,3 +76,8 @@ function remove_posts_menu() {
 }
 add_action('admin_menu', 'remove_posts_menu');
 
+//trim excerpt
+function custom_excerpt_length($length) {
+    return 12; // Number of words you want in the excerpt
+}
+add_filter('excerpt_length', 'custom_excerpt_length', 999);

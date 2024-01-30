@@ -60,6 +60,17 @@
     mix-blend-mode: screen;
     border-radius: 20px;
 }
+.block__tint-grey--darker {
+    opacity: .75;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #050e2b;
+    background: linear-gradient(90deg, #050e2b 25%, #31687f 100%);
+    mix-blend-mode: multiply;
+    border-radius: 20px;
+}
 
 section {
     position: relative;
@@ -393,6 +404,7 @@ img.icons-download {
         background-color: #fff;
         border-radius: 20px;
         border: 1px solid #ededed;
+
         img {
             height: 200px;
             @include media-breakpoint-up(lg) {
@@ -400,6 +412,26 @@ img.icons-download {
             }
             @include media-breakpoint-up(xxl) {
                 height: 280px;
+            }
+        }
+    }
+}
+
+.owl-carousel-content {
+    .item {
+        background-color: #fff;
+        border-radius: 20px;
+        min-height: 200px;
+        .post-content {
+            align-items: flex-start;
+            a {
+                flex-grow: 0;
+            }
+            @include media-breakpoint-up(lg) {
+                min-height: 340px;
+            }
+            @include media-breakpoint-up(xxl) {
+                min-height: 448px;
             }
         }
     }
