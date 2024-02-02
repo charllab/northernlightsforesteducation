@@ -93,18 +93,18 @@ $text = $text['content'];
                         <div class="pt-1 pt-lg-2 text-white">
                             <h2><?php echo $footer_content['title']; ?></h2>
                             <?php echo $footer_content['footer_content']; ?>
-                            <p class="text-white"><b>Phone:</b>
-                                <b>Phone:</b>
+                            <div class="text-white">
+                                Phone:
                                 <a href="tel:<?php echo strip_tel(get_field('phone_number', 'options')); ?>"
                                    class="fw-semibold text-white">
                                     <?php echo get_field('phone_number', 'options'); ?>
                                 </a>
                                 <br>
-                                <b>Email:</b>
+                                Email:
                                 <a href="mailto:<?php echo get_field('email', 'options'); ?>"
                                    class="fw-semibold text-white"><?php echo get_field('email', 'options'); ?>
                                 </a>
-                            </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -133,28 +133,28 @@ $text = $text['content'];
                         </div><!-- nav-logo -->
                     </div><!-- col -->
                     <div class="col-md-5 col-lg-3">
-                        <p class="text-white">
-                            <b>Contact us</b><br>
+                        <div class="text-white">
+                            <span class="fw-bold">Contact us</span><br>
                             <?php
                             $address = get_field('address', 'options');
                             if ($address) {
                                 echo $address . '<br>';
                             }
                             ?>
-                            <b>Phone:</b>
+                            Phone:
                             <a href="tel:<?php echo strip_tel(get_field('phone_number', 'options')); ?>"
                                class="fw-semibold text-white">
                                 <?php echo get_field('phone_number', 'options'); ?>
                             </a>
                             <br>
-                            <b>Email:</b>
+                            Email:
                             <a href="mailto:<?php echo get_field('email', 'options'); ?>"
                                class="fw-semibold text-white"><?php echo get_field('email', 'options'); ?>
                             </a>
-                        </p>
+                        </div>
                     </div><!-- col -->
                     <div class="col-md-4 col-lg-3">
-                        <p class="text-white mb-250"><b>Quick Links</b></p>
+                        <p class="text-white mb-250"><span class="fw-bold">Quick Links</span></p>
                         <?php wp_nav_menu([
                             'theme_location' => 'secondary',
                             'container_class' => '',
